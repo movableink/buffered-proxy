@@ -10,7 +10,7 @@
   var Ember = global.Ember,
       get = Ember.get, set = Ember.set;
 
-  BufferedProxy = Ember.Mixin.create({
+  var BufferedProxy = Ember.Mixin.create({
     buffer: null,
 
     hasBufferedChanges: false,
