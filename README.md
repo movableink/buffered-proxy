@@ -10,17 +10,17 @@ Usage
 var FooController = Ember.ObjectController.extend({
   bufferedContent: function() {
     return Em.ObjectProxy.extend(BufferedProxy).create({
-      content: @get('content')
+      content: this.get('content')
     });
   }.property('content'),
 
   actions: {
     save: function() {
-      @get('bufferedContent').applyBufferedChanges()
+      this.get('bufferedContent').applyBufferedChanges();
     },
 
     cancel: function() {
-      @get('bufferedContent').discardBufferedChanges()
+      this.get('bufferedContent').discardBufferedChanges();
     }
   }
 });
