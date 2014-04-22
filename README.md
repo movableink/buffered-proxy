@@ -29,4 +29,4 @@ var FooController = Ember.ObjectController.extend({
 About
 =====
 
-Written by Cory Forsyth, adapted for Bower by Michael Nutt.
+Written by Kris Selden for Yapp Labs, published by Luke Melia.
